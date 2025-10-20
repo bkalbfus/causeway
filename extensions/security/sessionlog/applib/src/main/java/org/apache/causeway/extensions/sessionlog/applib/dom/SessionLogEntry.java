@@ -176,7 +176,7 @@ public abstract class SessionLogEntry implements HasUsername, Comparable<Session
     @Retention(RetentionPolicy.RUNTIME)
     public @interface HttpSessionId {
         class DomainEvent extends PropertyDomainEvent<String> {}
-        int MAX_LENGTH = 32;
+        int MAX_LENGTH = 36;
         boolean NULLABLE = false;
         String ALLOWS_NULL = "false";
     }
